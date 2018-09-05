@@ -1,17 +1,8 @@
-<aura:component >
+<aura:component controller="taskController">
     <aura:handler event="c:MarvickAppToDoDeleteTaskEvent" action="{!c.handleDeleteTask}" />
     <aura:attribute name="tasks" type="String[]" />
     
-	<lightning:layout class="slds-page-header slds-page-header--object-home">
-        <lightning:layoutItem>
-            <lightning:icon iconName="action:goal" alternativeText="goal"/>
-        </lightning:layoutItem>
-
-        <lightning:layoutItem padding="horizontal-small">
-            <h1 class="slds-text-heading--label">Task List</h1>
-            <h2 class="slds-text-heading--medium">My Tasks</h2>
-        </lightning:layoutItem>
-    </lightning:layout>
+	<c:HeaderComponent />
     
     <c:MarvickAppCompTaskCreateContainer taskList="{!v.tasks}"/>
     <c:MarvickAppCompTasksContainer allTasks="{!v.tasks}"/>
