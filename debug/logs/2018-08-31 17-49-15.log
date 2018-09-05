@@ -1,0 +1,140 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:49:15.0 (446672)|USER_INFO|[EXTERNAL]|0051I000000JaV8|amarvick94@gmail.com|Pacific Standard Time|GMT-07:00
+17:49:15.0 (494739)|EXECUTION_STARTED
+17:49:15.0 (501152)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:49:15.0 (1739324)|HEAP_ALLOCATE|[72]|Bytes:3
+17:49:15.0 (1785485)|HEAP_ALLOCATE|[77]|Bytes:152
+17:49:15.0 (1801042)|HEAP_ALLOCATE|[342]|Bytes:408
+17:49:15.0 (1813373)|HEAP_ALLOCATE|[355]|Bytes:408
+17:49:15.0 (1824420)|HEAP_ALLOCATE|[467]|Bytes:48
+17:49:15.0 (1846493)|HEAP_ALLOCATE|[139]|Bytes:6
+17:49:15.0 (2862718)|CODE_UNIT_STARTED|[EXTERNAL]|01p1I00000Bm76p|PropertyController.findAll(String, Decimal, Decimal, Decimal, Decimal)
+17:49:15.0 (3105046)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+17:49:15.0 (3114947)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:2
+17:49:15.0 (3128902)|METHOD_ENTRY|[1]|01p1I00000Bm76p|PropertyController.PropertyController()
+17:49:15.0 (3137882)|STATEMENT_EXECUTE|[1]
+17:49:15.0 (3143820)|STATEMENT_EXECUTE|[1]
+17:49:15.0 (3183463)|HEAP_ALLOCATE|[50]|Bytes:5
+17:49:15.0 (3206375)|HEAP_ALLOCATE|[56]|Bytes:5
+17:49:15.0 (3215960)|HEAP_ALLOCATE|[64]|Bytes:7
+17:49:15.0 (3232411)|SYSTEM_MODE_ENTER|false
+17:49:15.0 (3244156)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:49:15.0 (3250482)|SYSTEM_MODE_EXIT|false
+17:49:15.0 (3259580)|METHOD_EXIT|[1]|PropertyController
+17:49:15.0 (3275163)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+17:49:15.0 (3279794)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+17:49:15.0 (3282940)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+17:49:15.0 (3286122)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+17:49:15.0 (3292112)|SYSTEM_MODE_ENTER|false
+17:49:15.0 (3301703)|VARIABLE_SCOPE_BEGIN|[4]|searchKey|String|false|false
+17:49:15.0 (3325945)|VARIABLE_ASSIGNMENT|[4]|searchKey|""
+17:49:15.0 (3331921)|VARIABLE_SCOPE_BEGIN|[4]|minPrice|Decimal|false|false
+17:49:15.0 (3344093)|VARIABLE_ASSIGNMENT|[4]|minPrice|0
+17:49:15.0 (3348525)|VARIABLE_SCOPE_BEGIN|[4]|maxPrice|Decimal|false|false
+17:49:15.0 (3355624)|VARIABLE_ASSIGNMENT|[4]|maxPrice|10000000
+17:49:15.0 (3359626)|VARIABLE_SCOPE_BEGIN|[4]|pageSize|Decimal|false|false
+17:49:15.0 (3367246)|VARIABLE_ASSIGNMENT|[4]|pageSize|8
+17:49:15.0 (3371326)|VARIABLE_SCOPE_BEGIN|[4]|pageNumber|Decimal|false|false
+17:49:15.0 (3378415)|VARIABLE_ASSIGNMENT|[4]|pageNumber|1
+17:49:15.0 (3389052)|HEAP_ALLOCATE|[5]|Bytes:5
+17:49:15.0 (3399266)|STATEMENT_EXECUTE|[4]
+17:49:15.0 (3401457)|STATEMENT_EXECUTE|[5]
+17:49:15.0 (3408848)|HEAP_ALLOCATE|[5]|Bytes:8
+17:49:15.0 (3415189)|VARIABLE_SCOPE_BEGIN|[5]|pSize|Integer|false|false
+17:49:15.0 (3425804)|VARIABLE_ASSIGNMENT|[5]|pSize|8
+17:49:15.0 (3430274)|STATEMENT_EXECUTE|[6]
+17:49:15.0 (3433569)|HEAP_ALLOCATE|[6]|Bytes:1
+17:49:15.0 (3449238)|HEAP_ALLOCATE|[6]|Bytes:2
+17:49:15.0 (3454211)|VARIABLE_SCOPE_BEGIN|[6]|key|String|false|false
+17:49:15.0 (3466396)|VARIABLE_ASSIGNMENT|[6]|key|"%%"
+17:49:15.0 (3470532)|STATEMENT_EXECUTE|[7]
+17:49:15.0 (3473550)|HEAP_ALLOCATE|[7]|Bytes:8
+17:49:15.0 (3481700)|VARIABLE_SCOPE_BEGIN|[7]|offset|Integer|false|false
+17:49:15.0 (3489542)|HEAP_ALLOCATE|[7]|Bytes:4
+17:49:15.0 (3494998)|VARIABLE_ASSIGNMENT|[7]|offset|0
+17:49:15.0 (3499189)|STATEMENT_EXECUTE|[8]
+17:49:15.0 (3503143)|HEAP_ALLOCATE|[8]|Bytes:148
+17:49:15.0 (3508670)|HEAP_ALLOCATE|[8]|Bytes:9
+17:49:15.0 (3521279)|METHOD_ENTRY|[1]|01p1I00000Bm76r|PropertyPagedResult.PropertyPagedResult()
+17:49:15.0 (3527558)|STATEMENT_EXECUTE|[1]
+17:49:15.0 (3531482)|STATEMENT_EXECUTE|[1]
+17:49:15.0 (3534827)|METHOD_EXIT|[1]|PropertyPagedResult
+17:49:15.0 (3606594)|HEAP_ALLOCATE|[8]|Bytes:20
+17:49:15.0 (3677794)|CONSTRUCTOR_ENTRY|[8]|01p1I00000Bm76r|<init>()|PropertyPagedResult
+17:49:15.0 (3712931)|VARIABLE_SCOPE_BEGIN|[1]|this|PropertyPagedResult|true|false
+17:49:15.0 (3763746)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x7ac82201
+17:49:15.0 (3775179)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+17:49:15.0 (3804742)|STATEMENT_EXECUTE|[1]
+17:49:15.0 (3806957)|STATEMENT_EXECUTE|[4]
+17:49:15.0 (3809117)|STATEMENT_EXECUTE|[7]
+17:49:15.0 (3810620)|STATEMENT_EXECUTE|[10]
+17:49:15.0 (3812896)|STATEMENT_EXECUTE|[13]
+17:49:15.0 (3844016)|CONSTRUCTOR_EXIT|[8]|01p1I00000Bm76r|<init>()|PropertyPagedResult
+17:49:15.0 (3857018)|VARIABLE_SCOPE_BEGIN|[8]|r|PropertyPagedResult|true|false
+17:49:15.0 (3875037)|VARIABLE_ASSIGNMENT|[8]|r|{}|0x7ac82201
+17:49:15.0 (3880811)|STATEMENT_EXECUTE|[9]
+17:49:15.0 (3944065)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x7ac82201
+17:49:15.0 (3954343)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|8
+17:49:15.0 (3965959)|VARIABLE_ASSIGNMENT|[4]|this.pageSize|8|0x7ac82201
+17:49:15.0 (3993579)|STATEMENT_EXECUTE|[10]
+17:49:15.0 (3998387)|HEAP_ALLOCATE|[10]|Bytes:8
+17:49:15.0 (4038085)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"pageSize":8}|0x7ac82201
+17:49:15.0 (4048229)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|1
+17:49:15.0 (4055971)|VARIABLE_ASSIGNMENT|[7]|this.page|1|0x7ac82201
+17:49:15.0 (4065950)|STATEMENT_EXECUTE|[11]
+17:49:15.0 (4093309)|HEAP_ALLOCATE|[11]|Bytes:164
+17:49:15.0 (4111808)|HEAP_ALLOCATE|[11]|Bytes:4
+17:49:15.0 (4123082)|HEAP_ALLOCATE|[11]|Bytes:7
+17:49:15.0 (4146981)|HEAP_ALLOCATE|[11]|Bytes:7
+17:49:15.0 (4155830)|HEAP_ALLOCATE|[11]|Bytes:7
+17:49:15.0 (4162352)|HEAP_ALLOCATE|[11]|Bytes:7
+17:49:15.0 (4195623)|HEAP_ALLOCATE|[11]|Bytes:28
+17:49:15.0 (4202555)|HEAP_ALLOCATE|[11]|Bytes:7
+17:49:15.0 (4212247)|HEAP_ALLOCATE|[11]|Bytes:28
+17:49:15.0 (4577066)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT COUNT() FROM property__c WHERE ((title__c LIKE :tmpVar1 OR city__c LIKE :tmpVar2 OR tags__c LIKE :tmpVar3) AND price__c >= :tmpVar4 AND price__c <= :tmpVar5)
+17:49:15.0 (21456583)|SOQL_EXECUTE_END|[11]|Rows:18
+17:49:15.0 (21477184)|HEAP_ALLOCATE|[11]|Bytes:4
+17:49:15.0 (21542585)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"page":1,"pageSize":8}|0x7ac82201
+17:49:15.0 (21554640)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|18
+17:49:15.0 (21763632)|HEAP_ALLOCATE|[10]|Bytes:4
+17:49:15.0 (22169615)|VARIABLE_ASSIGNMENT|[10]|this.total|18|0x7ac82201
+17:49:15.0 (22183606)|STATEMENT_EXECUTE|[15]
+17:49:15.0 (22188294)|HEAP_ALLOCATE|[15]|Bytes:321
+17:49:15.0 (22206994)|HEAP_ALLOCATE|[15]|Bytes:4
+17:49:15.0 (22242358)|HEAP_ALLOCATE|[15]|Bytes:28
+17:49:15.0 (22254077)|HEAP_ALLOCATE|[15]|Bytes:28
+17:49:15.0 (22259464)|HEAP_ALLOCATE|[15]|Bytes:7
+17:49:15.0 (22267990)|HEAP_ALLOCATE|[15]|Bytes:7
+17:49:15.0 (22272799)|HEAP_ALLOCATE|[15]|Bytes:4
+17:49:15.0 (22629668)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT Id, title__c, city__c, description__c, price__c, baths__c, beds__c, thumbnail__c FROM property__c WHERE ((title__c LIKE :tmpVar1 OR city__c LIKE :tmpVar2 OR tags__c LIKE :tmpVar3) AND price__c >= :tmpVar4 AND price__c <= :tmpVar5) ORDER BY price__c ASC NULLS FIRST, Id ASC NULLS LAST LIMIT :tmpVar6 OFFSET :tmpVar7
+17:49:15.0 (35281182)|SOQL_EXECUTE_END|[15]|Rows:8
+17:49:15.0 (35343067)|HEAP_ALLOCATE|[15]|Bytes:36
+17:49:15.0 (35378157)|HEAP_ALLOCATE|[15]|Bytes:2766
+17:49:15.0 (35418112)|HEAP_ALLOCATE|[15]|Bytes:36
+17:49:15.0 (35496546)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"page":1,"pageSize":8,"total":18}|0x7ac82201
+17:49:15.0 (35520242)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"List of size 8 too large to display"|0x2cf61c30
+17:49:15.0 (35535459)|VARIABLE_ASSIGNMENT|[13]|this.properties|"List of size 8 too large to display"|0x7ac82201
+17:49:15.0 (35551705)|STATEMENT_EXECUTE|[20]
+17:49:15.0 (35793902)|USER_DEBUG|[20]|DEBUG|PropertyPagedResult:[page=1, pageSize=8, properties=(Property__c:{Id=a0G1I000000u6AhUAI, Title__c=Seaport District Retreat, City__c=Boston, Description__c=Lorem ipsum dolor sit amet, Price__c=450000, Baths__c=3, Beds__c=3, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09sq.jpg}, Property__c:{Id=a0G1I000000u6AvUAI, Title__c=City Living, City__c=Boston, Description__c=Lorem ipsum dolor sit amet, Price__c=450000, Baths__c=1, Beds__c=3, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07sq.jpg}, Property__c:{Id=a0G1I000000u6AxUAI, Title__c=Heart of Harvard Square, City__c=Cambridge, Description__c=Lorem ipsum dolor sit amet, Price__c=450000, Baths__c=4, Beds__c=5, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10sq.jpg}, Property__c:{Id=a0G1I000000u6AjUAI, Title__c=Character and Details, City__c=Boston, Description__c=Lorem ipsum dolor sit amet, Price__c=650000, Baths__c=4, Beds__c=5, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian04sq.jpg}, Property__c:{Id=a0G1I000000u6AlUAI, Title__c=City Living, City__c=Boston, Description__c=Lorem ipsum dolor sit amet, Price__c=650000, Baths__c=2, Beds__c=2, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg}, Property__c:{Id=a0G1I000000u6AiUAI, Title__c=Architectural Details, City__c=Boston, Description__c=Lorem ipsum dolor sit amet, Price__c=690000, Baths__c=3, Beds__c=3, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11sq.jpg}, Property__c:{Id=a0G1I000000u6AoUAI, Title__c=Historical Victorian, City__c=Brookline, Description__c=Lorem ipsum dolor sit amet, Price__c=690000, Baths__c=3, Beds__c=5, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian01sq.jpg}, Property__c:{Id=a0G1I000000u6AtUAI, Title__c=Quiet Retreat, City__c=Boston, Description__c=Lorem ipsum dolor sit amet, Price__c=725000, Baths__c=2, Beds__c=4, Thumbnail__c=https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06sq.jpg}), total=18]
+17:49:15.0 (35827776)|STATEMENT_EXECUTE|[21]
+17:49:15.0 (35837746)|SYSTEM_MODE_EXIT|false
+17:49:15.35 (35865735)|CUMULATIVE_LIMIT_USAGE
+17:49:15.35 (35865735)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 9 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:49:15.35 (35865735)|CUMULATIVE_LIMIT_USAGE_END
+
+17:49:15.0 (35903592)|CODE_UNIT_FINISHED|PropertyController.findAll(String, Decimal, Decimal, Decimal, Decimal)
+17:49:15.0 (36108537)|CODE_UNIT_FINISHED|Aura
+17:49:15.0 (37405381)|EXECUTION_FINISHED

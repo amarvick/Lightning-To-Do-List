@@ -1,0 +1,15 @@
+<apex:page standardController="Application__c" extensions="CC_RefundController">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+            <apex:commandLink value="Save" action="{!saveRefund}" target="_parent" styleClass="btn" style="text-decoration:none;padding:5px;"/>
+        </apex:pageBlockButtons>
+
+        <apex:pageBlockSection title="Refund Section" columns="2">
+            <apex:inputText value="{!appName}"/>
+            <apex:outputText value="{!app.account__r.name}"/>
+        </apex:pageBlockSection>
+
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

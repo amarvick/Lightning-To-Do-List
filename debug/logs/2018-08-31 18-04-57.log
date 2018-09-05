@@ -1,0 +1,45 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: List<Expense__c> items = [select Amount__c, Client__c, Date__c, Reimbursed__c from Expense__c limit 1];
+18:04:55.1 (1465091)|USER_INFO|[EXTERNAL]|0051I000000JaV8|amarvick94@gmail.com|Pacific Standard Time|GMT-07:00
+18:04:55.1 (1488861)|EXECUTION_STARTED
+18:04:55.1 (1494456)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+18:04:55.1 (1776338)|VARIABLE_SCOPE_BEGIN|[1]|items|List<Expense__c>|true|false
+18:04:55.1 (1925299)|HEAP_ALLOCATE|[72]|Bytes:3
+18:04:55.1 (1993424)|HEAP_ALLOCATE|[77]|Bytes:152
+18:04:55.1 (2018665)|HEAP_ALLOCATE|[342]|Bytes:408
+18:04:55.1 (2033552)|HEAP_ALLOCATE|[355]|Bytes:408
+18:04:55.1 (2044249)|HEAP_ALLOCATE|[467]|Bytes:48
+18:04:55.1 (2075789)|HEAP_ALLOCATE|[139]|Bytes:6
+18:04:55.1 (2096531)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+18:04:55.1 (2188650)|STATEMENT_EXECUTE|[1]
+18:04:55.1 (2191634)|STATEMENT_EXECUTE|[1]
+18:04:55.1 (2194769)|HEAP_ALLOCATE|[1]|Bytes:75
+18:04:55.1 (2234570)|HEAP_ALLOCATE|[1]|Bytes:4
+18:04:55.1 (2297939)|HEAP_ALLOCATE|[50]|Bytes:5
+18:04:55.1 (2328412)|HEAP_ALLOCATE|[56]|Bytes:5
+18:04:55.1 (2336768)|HEAP_ALLOCATE|[64]|Bytes:7
+18:04:55.1 (2655339)|SOQL_EXECUTE_BEGIN|[1]|Aggregations:0|SELECT Amount__c, Client__c, Date__c, Reimbursed__c FROM Expense__c LIMIT 1
+18:04:55.1 (13180948)|SOQL_EXECUTE_END|[1]|Rows:0
+18:04:55.1 (13224807)|HEAP_ALLOCATE|[1]|Bytes:4
+18:04:55.1 (13241077)|HEAP_ALLOCATE|[1]|Bytes:0
+18:04:55.1 (13292584)|HEAP_ALLOCATE|[1]|Bytes:4
+18:04:55.1 (13339584)|VARIABLE_ASSIGNMENT|[1]|items|[]|0x522fa79f
+18:04:55.13 (13372698)|CUMULATIVE_LIMIT_USAGE
+18:04:55.13 (13372698)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+18:04:55.13 (13372698)|CUMULATIVE_LIMIT_USAGE_END
+
+18:04:55.1 (13408806)|CODE_UNIT_FINISHED|execute_anonymous_apex
+18:04:55.1 (14266953)|EXECUTION_FINISHED

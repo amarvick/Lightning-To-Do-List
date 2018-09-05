@@ -1,0 +1,18 @@
+{
+    "projectName": "Personal Dev",
+    "username": "amarvick94@gmail.com",
+    "id": "61ecd240-5ab9-11e8-94cf-9305cec363da",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://alexmarvickproject2-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\alex.DESKTOP-KG7RN8C\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "StaticResource"
+    ]
+}

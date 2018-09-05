@@ -1,0 +1,25 @@
+<apex:component >
+  
+  <apex:slds />
+  <div id="container" class="slds-scope" >
+  
+    <apex:attribute name="label" type="String" description="Naming the SLDS Checkbox"/>
+    <apex:attribute name="value" type="String" description="cbox2"/>
+  <!--
+    <div class="slds-form-element">
+      <div class="slds-form-element__control">
+        <span class="slds-checkbox">
+          <input type="checkbox" />
+          <label class="slds-checkbox__label">
+            <span class="slds-checkbox_faux"></span>
+            <span class="slds-form-element__label">SLDS Checkbox</span>
+          </label>
+        </span>
+      </div>
+    </div>   
+      -->
+      
+      <apex:inputCheckbox ></apex:inputCheckbox>
+  </div>
+  
+</apex:component>

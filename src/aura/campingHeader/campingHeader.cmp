@@ -1,0 +1,19 @@
+<aura:component>
+    <lightning:layout class="slds-page-header slds-page-header--object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="action:goal" alternativeText="goal"/>
+        </lightning:layoutItem>
+
+        <lightning:layoutItem padding="horizontal-small">
+            <h1 class="slds-text-heading--label">Camping List</h1>
+            <h2 class="slds-text-heading--medium">My Camping Items</h2>
+        </lightning:layoutItem>
+    </lightning:layout>
+
+<!-- AM - Removed this. Didn't need two on there. -->
+    <!-- <lightning:layout> -->
+        <!-- <lightning:layoutItem padding="around-small" size="6"> -->
+            <!-- <c:campingListForm/> -->
+        <!-- </lightning:layoutItem> -->
+    <!-- </lightning:layout> -->
+</aura:component>

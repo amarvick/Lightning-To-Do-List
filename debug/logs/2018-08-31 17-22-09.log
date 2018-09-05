@@ -1,0 +1,52 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:22:09.0 (89651)|USER_INFO|[EXTERNAL]|0051I000000JaV8|amarvick94@gmail.com|Pacific Standard Time|GMT-07:00
+17:22:09.0 (123653)|EXECUTION_STARTED
+17:22:09.0 (127522)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+17:22:09.0 (1857319)|CODE_UNIT_STARTED|[EXTERNAL]|01p1I00000GA2Qw|CampingListController.saveItem(Camping_Item__c)
+17:22:09.0 (2140830)|HEAP_ALLOCATE|[72]|Bytes:3
+17:22:09.0 (2205075)|HEAP_ALLOCATE|[77]|Bytes:152
+17:22:09.0 (2222454)|HEAP_ALLOCATE|[342]|Bytes:408
+17:22:09.0 (2234037)|HEAP_ALLOCATE|[355]|Bytes:408
+17:22:09.0 (2244609)|HEAP_ALLOCATE|[467]|Bytes:48
+17:22:09.0 (2269512)|HEAP_ALLOCATE|[139]|Bytes:6
+17:22:09.0 (2286416)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+17:22:09.0 (2299108)|METHOD_ENTRY|[1]|01p1I00000GA2Qw|CampingListController.CampingListController()
+17:22:09.0 (2307115)|STATEMENT_EXECUTE|[1]
+17:22:09.0 (2312829)|STATEMENT_EXECUTE|[1]
+17:22:09.0 (2317037)|METHOD_EXIT|[1]|CampingListController
+17:22:09.0 (2330357)|SYSTEM_MODE_ENTER|false
+17:22:09.0 (2340897)|VARIABLE_SCOPE_BEGIN|[8]|CampingItem|Camping_Item__c|true|false
+17:22:09.0 (2364505)|VARIABLE_ASSIGNMENT|[8]|CampingItem|null|
+17:22:09.0 (2373919)|STATEMENT_EXECUTE|[8]
+17:22:09.0 (2375729)|STATEMENT_EXECUTE|[9]
+17:22:09.0 (2415804)|HEAP_ALLOCATE|[50]|Bytes:5
+17:22:09.0 (2438425)|HEAP_ALLOCATE|[56]|Bytes:5
+17:22:09.0 (2445732)|HEAP_ALLOCATE|[64]|Bytes:7
+17:22:09.0 (2517752)|EXCEPTION_THROWN|[9]|System.NullPointerException: Attempt to de-reference a null object
+17:22:09.0 (2632909)|HEAP_ALLOCATE|[9]|Bytes:41
+17:22:09.0 (2714253)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.CampingListController.saveItem: line 9, column 1
+17:22:09.0 (2728393)|FATAL_ERROR|System.NullPointerException: Attempt to de-reference a null object
+
+Class.CampingListController.saveItem: line 9, column 1
+17:22:09.2 (2733395)|CUMULATIVE_LIMIT_USAGE
+17:22:09.2 (2733395)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:22:09.2 (2733395)|CUMULATIVE_LIMIT_USAGE_END
+
+17:22:09.0 (2764281)|CODE_UNIT_FINISHED|CampingListController.saveItem(Camping_Item__c)
+17:22:09.0 (6767597)|CODE_UNIT_FINISHED|Aura
+17:22:09.0 (7972349)|EXECUTION_FINISHED

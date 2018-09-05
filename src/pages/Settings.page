@@ -1,0 +1,64 @@
+<apex:page standardController="User" extensions="OpsHR_UserSettingsController">
+    <apex:includeScript value="/support/console/41.0/integration.js"/>
+    <apex:includeScript value="/soap/ajax/27.0/apex.js"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+  <script>
+
+
+    function savecase() {
+      // Retrieve contents from selected Content; will use to compare to user's current settings in the back end
+      var selectedSLBox = document.getElementById("j_id0:j_id4:CD:comId:Comp_id:multiselectPanel:rightList").getElementsByTagName("option");
+
+      var selectedSLContents = [];
+
+      for (var i = 0; i < selectedSLBox.length; i++) {
+        selectedSLContents.push(selectedSLBox[i].getAttribute("value"));
+      }
+
+      selectedSLContents = selectedSLContents.sort().toString();
+
+      //selectedSLContents = selectedSLContents.toString();
+
+      saveSLs(selectedSLContents);
+    }
+  </script>
+  <div>
+    <apex:form >
+      <!-- <label>Your Current Support Location: </label><apex:outputText value="{! User }" /> -->
+      <br/>
+      <label>If you need to change your Support Location... </label> 
+
+      <apex:selectList value="{! userSupportLocation }" size="1">
+        <label>Support Location </label><apex:selectOptions value="{!allPubGroups}"></apex:selectOptions>
+      </apex:selectList> 
+
+      <apex:commandButton action="{!saveType}" value="Save" id="theButton"/>
+
+      <div class="slds-scope">    
+        <apex:pageBlock title="Select Public Groups" id="CD">
+          <!-- <label>Your Current Access to Public Groups: </label> {! selectedQueues.Label } -->
+          <c:MultiSelectPicklist Id="comId" leftLabel="Available Public Groups"
+                                 leftOption="{!unselectedQueues}"
+                                 rightLabel="Selected Public Groups"
+                                 rightOption="{!selectedQueues}"
+                                 size="14"
+                                 width="300px"/>
+
+          <div class="stickyBottom" align="center" draggable="false">
+            <apex:pageBlockButtons location="Bottom">
+              <apex:commandLink onclick="savecase();">
+                <apex:commandButton value="Update Public Groups" />
+                <!-- disabled="{!IF(case.type == NULL, True, False)}"/> -->
+              </apex:commandLink>
+
+              <apex:actionFunction name="saveSLs" action="{!grantQueueAccess}" reRender="view">
+                <apex:param id="selectedSLs" name="selectedSLs" value="" />
+              </apex:actionFunction>
+            </apex:pageBlockButtons>
+          </div>
+        </apex:pageBlock>
+      </div> 
+    </apex:form>
+  </div>
+</apex:page>

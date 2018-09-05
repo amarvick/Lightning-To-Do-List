@@ -1,0 +1,3 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <lightning:input type="number" placeholder="Input weight"></lightning:input>
+</aura:component>

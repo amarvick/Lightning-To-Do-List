@@ -1,0 +1,267 @@
+<apex:component controller="MultiselectController" Id="Comp_id">
+    <script type="text/javascript">
+        function selectAllCheckboxes(obj,receivedInputID){
+            var inputCheckBox = document.getElementsByTagName("select");                  
+            for(var i=0; i<inputCheckBox.length; i++){          
+                if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+    
+        function CloseTab() {
+            //First find the ID of the current tab to close it
+            sforce.console.getEnclosingTabId(closeSubtab);
+        }
+    
+        var closeSubtab = function closeSubtab(result) {
+            //Now that we have the tab ID, we can close it
+            var tabId = result.id;
+            sforce.console.closeTab(tabId);
+        };
+    </script>
+    
+    <apex:attribute name="leftLabel" description="Label on left listbox."
+                    type="String" required="true" />
+    <apex:attribute name="rightLabel" description="Label on right listbox."
+                    type="String" required="true" />
+    <apex:attribute name="size" description="Size of listboxes."
+                    type="Integer" required="true" />
+    <apex:attribute name="width" description="Width of listboxes."
+                    type="String" required="true" />
+    <apex:attribute name="showUpDownButtons" description="Should Up/Down buttons be displayed or not."
+                    type="Boolean" required="false" default="true"/>
+    <apex:attribute name="leftOption"
+                    description="Options list for left listbox." type="SelectOption[]"
+                    required="true" assignTo="{!leftOptions}" />
+    <apex:attribute name="rightOption"
+                    description="Options list for right listbox." type="SelectOption[]"
+                    required="true" assignTo="{!rightOptions}" />
+    
+    <apex:outputPanel id="multiselectPanel" layout="block" styleClass="duelingListBox">
+        <table class="layout">
+            <tbody>
+                <tr>
+                    <td class="selectCell">
+                        <apex:outputPanel layout="block" styleClass="selectTitle">
+                            <apex:outputLabel value="{!leftLabel}" for="multiselectPanel:leftList" />
+                        </apex:outputPanel>
+                        <select id="{!$Component.multiselectPanel}:leftList" 
+                                class="multilist" multiple="multiple" size="{!size}" 
+                                style="width: {!width};">
+                            <apex:repeat value="{!leftOptions}" var="option">
+                                <option value="{!option.value}">{!option.label}</option>
+                            </apex:repeat>
+                        </select>
+                    </td>
+                    <td class="buttonCell">
+                        <apex:outputPanel layout="block" styleClass="text">Add</apex:outputPanel>
+                        <apex:outputPanel layout="block" styleClass="text">
+                            <apex:outputLink value="javascript:moveSelectedOptions('{!$Component.multiselectPanel}:leftList', 
+                                                    '{!$Component.multiselectPanel}:rightList', '{!$Component.leftHidden}', 
+                                                    '{!$Component.rightHidden}');"
+                                             id="btnRight">
+                                <apex:image value="/s.gif" alt="Add" styleClass="rightArrowIcon"
+                                            title="Add" />
+                            </apex:outputLink>
+                        </apex:outputPanel>
+                        <apex:outputPanel layout="block" styleClass="text">
+                            <apex:outputLink value="javascript:moveSelectedOptions('{!$Component.multiselectPanel}:rightList', 
+                                                    '{!$Component.multiselectPanel}:leftList', '{!$Component.rightHidden}', 
+                                                    '{!$Component.leftHidden}');"
+                                             id="btnLeft">
+                                <apex:image value="/s.gif" alt="Remove"
+                                            styleClass="leftArrowIcon" title="Remove" />
+                            </apex:outputLink>
+                            
+                        </apex:outputPanel>
+                        <apex:outputPanel layout="block" styleClass="duelingText">Remove</apex:outputPanel>
+                   
+                    <apex:outputPanel >
+                     &nbsp;   
+                    </apex:outputPanel>
+                    
+                    <apex:outputPanel layout="block" styleClass="text">
+                       <apex:outputLink value="javascript:moveAllOptions('{!$Component.multiselectPanel}:leftList', 
+                                                    '{!$Component.multiselectPanel}:rightList', '{!$Component.leftHidden}', 
+                                                    '{!$Component.rightHidden}');"
+                                                       id="moveRight">
+                                Select All
+                        </apex:outputLink>
+                                
+                        </apex:outputPanel>
+                        <apex:outputPanel layout="block" styleClass="text">
+                            
+                             <apex:outputLink value="javascript:moveAllOptions('{!$Component.multiselectPanel}:rightList', 
+                                                    '{!$Component.multiselectPanel}:leftList', '{!$Component.rightHidden}', 
+                                                    '{!$Component.leftHidden}');"
+                                             id="moveLeft">
+                                 Remove All
+                         </apex:outputLink>   
+                         </apex:outputPanel>
+                     </td>
+                    <td class="selectCell">
+                        <apex:outputPanel layout="block" styleClass="selectTitle">
+                            <apex:outputLabel value="{!rightLabel}" for="multiselectPanel:rightList" />
+                        </apex:outputPanel>
+                        <select id="{!$Component.multiselectPanel}:rightList" 
+                                class="multilist" multiple="multiple" size="{!size}" 
+                                style="width: {!width};">
+                            <apex:repeat value="{!rightOptions}" var="option">
+                                <option value="{!option.value}">{!option.label}</option>
+                            </apex:repeat>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <apex:inputHidden value="{!leftOptionsHidden}" id="leftHidden" />
+        <apex:inputHidden value="{!rightOptionsHidden}" id="rightHidden" />
+    
+    
+    </apex:outputPanel>
+     
+    <script type="text/javascript">
+    
+    function selectAll(listID, isSelect, idTo, idHdnFrom, idHdnTo) {
+        var listbox = document.getElementById(listID);
+        // alert(listID);
+        for(var count=0; count < listbox.options.length; count++) {
+            listbox.options[count].selected = isSelect;
+            
+        }
+        
+    }
+    </script>
+    
+    <script type="text/javascript">
+        if (!moveAllOptions) {
+        //Move All
+        var moveAllOptions = function(idFromA, idToA, idHdnFromA, idHdnToA) {
+            listFromAllA = document.getElementById(idFromA);
+            listToA = document.getElementById(idToA);
+            
+            for ( var x = 0; x < listFromAllA.options.length; x++) {
+                    listToA.appendChild(listFromAllA.options[x]);
+                 x--;
+                 
+            }
+            
+            
+            listToA.focus();
+            
+            buildOutputString(listFromAllA, document.getElementById(idHdnFromA));
+            buildOutputString(listToA, document.getElementById(idHdnToA));
+        }
+         }
+    </script>
+    
+    
+    <script type="text/javascript">
+    
+    
+    if (!buildOutputString) {
+        // Create a string from the content of a listbox
+        var buildOutputString = function(listBox, hiddenInput) {
+            var str = '';
+            
+            for ( var x = 0; x < listBox.options.length; x++) {
+                str += encodeURIComponent(listBox.options[x].value) + '&'
+                + encodeURIComponent(listBox.options[x].text) + '&';
+            }
+            str.length--;
+            
+            hiddenInput.value = str.slice(0, -1);
+        }
+        }
+    
+
+    
+    
+    if (!moveSelectedOptions) {
+        // Move the selected options in the idFrom listbox to the idTo
+        // listbox, updating the corresponding strings in idHdnFrom and
+        // idHdnTo
+        var moveSelectedOptions = function(idFrom, idTo, idHdnFrom, idHdnTo) {
+            listFromAll = document.getElementById(idFrom);
+            listTo = document.getElementById(idTo);
+            //if(document.getElementById(idTo).contains(rightList))
+            
+            for ( var x = 0; x < listTo.options.length; x++) {
+                listTo.options[x].selected = false;
+            }
+            
+            for ( var x = 0; x < listFromAll.options.length; x++) {
+                
+                if (listFromAll.options[x].selected == true) {
+                    listTo.appendChild(listFromAll.options[x]);
+                    x--;
+                  }
+            }
+            
+            
+            listTo.focus();
+            
+            buildOutputString(listFromAll, document.getElementById(idHdnFrom));
+            buildOutputString(listTo, document.getElementById(idHdnTo));
+        }
+        }
+    
+     
+    
+    if (!slideSelectedOptionsUp) {
+        // Slide the selected options in the idList listbox up by one position,
+        // updating the corresponding string in idHidden
+        var slideSelectedOptionsUp = function(idList, idHidden) {
+            listBox = document.getElementById(idList);
+            var len = listBox.options.length;
+            
+            if (len > 0 && listBox.options[0].selected == true) {
+                return;
+            }
+            
+            for ( var x = 1; x < len; x++) {
+                if (listBox.options[x].selected == true) {
+                    listBox.insertBefore(listBox.options[x],
+                                         listBox.options[x - 1]);
+                }
+            }
+            
+            listBox.focus();
+            
+            buildOutputString(listBox, document.getElementById(idHidden));
+        }
+        }
+    
+    if (!slideSelectedOptionsDown) {
+        // Slide the selected options in the idList listbox down by one position,
+        // updating the corresponding string in idHidden
+        var slideSelectedOptionsDown = function(idList, idHidden) {
+            listBox = document.getElementById(idList);
+            //alert(idList);
+            var len = listBox.options.length;
+            
+            if (len > 0 && listBox.options[len - 1].selected == true) {
+                return;
+            }
+            
+            for ( var x = listBox.options.length - 2; x >= 0; x--) {
+                if (listBox.options[x].selected == true) {
+                    listBox.insertBefore(listBox.options[x + 1],
+                                         listBox.options[x]);
+                }
+            }
+            
+            listBox.focus();
+            
+            buildOutputString(listBox, document.getElementById(idHidden));
+        }
+        }
+    
+    // initialize the string representations
+    buildOutputString(document.getElementById('{!$Component.multiselectPanel}:leftList'), 
+                      document.getElementById('{!$Component.leftHidden}'));
+    buildOutputString(document.getElementById('{!$Component.multiselectPanel}:rightList'), 
+                      document.getElementById('{!$Component.rightHidden}'));
+    </script>
+</apex:component>
