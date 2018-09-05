@@ -1,5 +1,4 @@
 <aura:component >
-    <aura:attribute name="taskInput" type="String" />
     <aura:attribute name="taskList" type="String[]" />
     
     <div class="slds-grid slds-grid_vertical-align-center">
@@ -7,7 +6,7 @@
         <div class="slds-form-element">
           <label class="slds-form-element__label" for="task-input">Create Task</label>
           <div class="slds-form-element__control">
-            <input type="text" id="task-input" class="slds-input" placeholder="Task" value="{!v.taskInput}" />
+            <input type="text" id="task-input" class="slds-input" placeholder="Task"/> <!-- v.taskInput may not be necessary-->
           </div>
         </div>
       </div>

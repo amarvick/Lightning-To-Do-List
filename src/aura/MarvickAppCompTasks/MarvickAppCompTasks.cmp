@@ -3,7 +3,7 @@
     <aura:attribute name="arrayIndex" type="Integer" />
     <tr>
         <td data-label="Task">
-            <div class="slds-truncate">{!v.arrayIndex}. {!v.taskName}</div>
+            <div class="slds-truncate">{!v.taskName}</div>
         </td>
         <td data-label="Action">
             <c:MarvickToDoDeleteButton arrayIndex="{!v.arrayIndex}" />
