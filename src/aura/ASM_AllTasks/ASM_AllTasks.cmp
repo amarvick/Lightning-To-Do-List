@@ -6,7 +6,7 @@
             <div class="slds-truncate">{!v.taskName}</div>
         </td>
         <td data-label="Action">
-            <!--<c:MarvickToDoDeleteButton arrayIndex="{!v.arrayIndex}" />-->
+            <c:MarvickToDoDeleteButton arrayIndex="{!v.arrayIndex}" />
         </td>
     </tr>
 </aura:component>

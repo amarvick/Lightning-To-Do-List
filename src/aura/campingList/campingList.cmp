@@ -1,6 +1,6 @@
 <aura:component controller="CampingListController">
     <aura:handler name="init" action="{! c.doInit }" value="{!this}"/>
-    <aura:handler name="addItem" event="c:addItemEvent" action="{!c.handleAddItem}" /> <!-- AM - not sure what the point of the event is... ask -->
+    <aura:handler name="addItem" event="c:addItemEvent" action="{!c.handleAddItem}" />
     <aura:attribute name="items" type="Camping_Item__c[]"/>
     <aura:attribute name="newItem" type="Camping_Item__c" default="{ 'sobjectType': 'Camping_Item__c',
                                                                     'Name': '',

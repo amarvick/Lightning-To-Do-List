@@ -1,0 +1,5 @@
+<aura:component controller="AM_MyContactsController">
+    <aura:handler name="init" action="{!c.getContactsList}" value="{!this}" />
+    <aura:attribute name="contactList" type="List" /> <!-- List? Or Contact List? We'll find out... -->
+    <aura:attribute name="recordId" type="Id" />
+</aura:component>

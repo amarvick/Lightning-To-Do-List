@@ -5,6 +5,6 @@
     
 	<c:HeaderComponent />
     
-    <!--<c:MarvickAppCompTaskCreateContainer taskList="{!v.tasks}"/>-->
-    <!--<c:MarvickAppCompTasksContainer allTasks="{!v.tasks}"/>-->
+    <c:ASM_CreateTaskContainer taskList="{!v.tasks}"/>
+    <c:ASM_AllTasksContainer allTasks="{!v.tasks}"/>
 </aura:component>

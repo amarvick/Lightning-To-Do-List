@@ -14,7 +14,7 @@
         </thead>
         <tbody>
             <aura:iteration items="{!v.allTasks}" var="t" indexVar="index">
-                <!--<c:MarvickAppCompTasks taskName="{!t}" arrayIndex="{!index}"/>-->
+                <c:ASM_AllTasks taskName="{!t}" arrayIndex="{!index}"/>
             </aura:iteration>
         </tbody>
     </table>

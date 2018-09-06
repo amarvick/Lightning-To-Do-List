@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:MarvickAppHeader />
+    <!--<c:MarvickAppHeader />-->
 </aura:application>
