@@ -1,3 +1,0 @@
-<aura:component >
-    <aura:attribute name="taskInput" type="String" />
-</aura:component>
