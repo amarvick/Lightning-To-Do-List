@@ -11,7 +11,10 @@
         
         // Set the List of Tasks
         component.set('v.tasks', tasks);
-        
-        // helper.updateTasks(component, tasks);
+	},
+    
+    updateTasks : function(component, event, helper) {
+        const tasks = component.get('v.tasks');
+    	helper.updateTasks(component, tasks);
 	}
 })

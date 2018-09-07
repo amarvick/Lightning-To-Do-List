@@ -1,15 +1,11 @@
 ({
-	updateTasks : function(component, todoTask) {
-        this.saveTasks(component, todoTask, function(response) {
-            const state = response.getState();
-            if (state === 'SUCCESS') {
-                var tasks = component.get('v.tasks');
-                tasks.push(response.getReturnValue());
-                component.set('v.tasks', tasks);
-            } else {
-                alert('Your code is messed up bro');
-            }
-            
-        })
+	updateTasks : function(component, allTasks) {
+        
+        // Getting the Apex function, defining the parameters
+        var action = component.get("c.saveTasks") 
+        action.setParams({theAccountNames: allTasks})
+                          
+        // Firing the Apex function
+        $A.enqueueAction(action)
 	}
 })

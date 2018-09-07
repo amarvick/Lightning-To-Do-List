@@ -1,3 +1,0 @@
-<aura:component implements="flexipage:availableForAllPageTypes">
-    <lightning:input type="number" placeholder="Input Height in Feet"></lightning:input>
-</aura:component>
