@@ -3,12 +3,16 @@
         
         // Getting the Apex function, defining the parameters
         var action = component.get("c.saveTasks") 
-        action.setParams({theTaskSubjects: allTasks})
+        action.setParams({
+            theTaskSubjects: allTasks,
+            theTaskStatues: allTasks
+        })
+        
                           
         // Firing the Apex function
         $A.enqueueAction(action)
         
-        alert('Saved');
+        alert('Tasks Saved');
 	},
     
     retrieveTasks : function(component) {

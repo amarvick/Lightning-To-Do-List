@@ -9,7 +9,7 @@ public class taskController {
     @AuraEnabled // getTasks function is now lightning-enabled. This should happen on page initialization
     public static List<String> getTasks() {
         List<String> subjects = new List<String>();
-        List<Task> allTasks = [SELECT Id, Subject FROM Task]; //];
+        List<Task> allTasks = [SELECT Id, Subject FROM Task];
         
         for (Task t : allTasks) {
             subjects.add(t.Subject);
@@ -19,7 +19,7 @@ public class taskController {
     }
     
     @AuraEnabled // AM - This is for saving tasks. Will need to improve code for deleting/adding
-    public static void saveTasks(List<String> theTaskSubjects) {
+    public static void saveTasks(List<String> theTaskSubjects, List<String> theTaskStatuses) {
 
         // Tasks to Add
         List<Task> allNewTasks = new List<Task>();
@@ -51,8 +51,8 @@ public class taskController {
             if (!allCurrentTaskSubjects.contains(s)) {
             
                 Task theNewTask = new Task(
-                    Subject = s,
-                    OwnerId = currentUser.Id
+                    Subject = s
+                    // OwnerId = currentUser.Id
                 );
                 allNewTasks.add(theNewTask);
             }

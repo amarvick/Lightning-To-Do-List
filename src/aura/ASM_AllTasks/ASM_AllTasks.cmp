@@ -1,10 +1,10 @@
 <aura:component controller="taskController">
     <aura:attribute name="taskName" type="String" />
-    <!-- <aura:attribute name="taskStatus" type="String" /> -->
+    <aura:attribute name="taskStatus" type="String" />
     <aura:attribute name="arrayIndex" type="Integer" />
     <tr>
         <td data-label="Task">
-            <div class="slds-truncate">{!v.taskName}</div>
+            <div class="slds-truncate">{!v.arrayIndex}. {!v.taskName}</div>
         </td>
         <td data-label="Status">
             <select label="Task Status"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select' -->

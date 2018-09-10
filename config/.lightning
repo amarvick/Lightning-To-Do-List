@@ -4218,6 +4218,23 @@
     {
         "attributes": {
             "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VpHeSAK"
+        },
+        "Id": "0Ad1I000001VpHeSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmMSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmMSAW"
+            },
+            "DeveloperName": "ASM_DisplayComponent"
+        },
+        "DefType": "STYLE",
+        "Format": "CSS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
             "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMlSAK"
         },
         "Id": "0Ad1I000001VoMlSAK",
@@ -4231,6 +4248,23 @@
         },
         "DefType": "APPLICATION",
         "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VpHZSA0"
+        },
+        "Id": "0Ad1I000001VpHZSA0",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmRSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmRSAW"
+            },
+            "DeveloperName": "ASM_ToDoApp"
+        },
+        "DefType": "STYLE",
+        "Format": "CSS"
     },
     {
         "attributes": {
@@ -4265,5 +4299,39 @@
         },
         "DefType": "CONTROLLER",
         "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VpGbSAK"
+        },
+        "Id": "0Ad1I000001VpGbSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RN6vSAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RN6vSAG"
+            },
+            "DeveloperName": "ASM_ToDoCompRecPage"
+        },
+        "DefType": "COMPONENT",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VpGgSAK"
+        },
+        "Id": "0Ad1I000001VpGgSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RN6vSAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RN6vSAG"
+            },
+            "DeveloperName": "ASM_ToDoCompRecPage"
+        },
+        "DefType": "STYLE",
+        "Format": "CSS"
     }
 ]
