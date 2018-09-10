@@ -14,4 +14,5 @@
 /src/triggers
 
 /src/classes/*
-!/src/classes/ASM_ScheduledRemoveTasks
+!/src/classes/ASM_ScheduledRemoveTasks.cls
+!/src/classes/taskController.cls
