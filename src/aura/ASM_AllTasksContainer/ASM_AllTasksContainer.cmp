@@ -1,0 +1,21 @@
+<aura:component>
+    <aura:attribute name="allTasks" type="String[]"/>
+    <aura:attribute name="arrayIndex" type="Integer"/>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="Task">Task</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Action">Action</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.allTasks}" var="t" indexVar="index">
+                <c:ASM_AllTasks taskName="{!t}" arrayIndex="{!index}"/>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

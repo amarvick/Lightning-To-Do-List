@@ -1,0 +1,9 @@
+/* .THIS will apply for EVERY individual VF tag within the component */
+
+.THIS {
+	padding: 10px;
+}
+
+.cASM_CreateTask .slds-input {
+    width: 200px;
+}

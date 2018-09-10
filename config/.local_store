@@ -2024,7 +2024,7 @@
         "id": "0Ad1I000001VkD7SAK",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-08-28T21:02:16.000Z",
+        "lastModifiedDate": "2018-09-10T17:45:58.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -3724,17 +3724,15 @@
         "mmState": "clean"
     },
     "VisionController.cls": {
-        "id": "01p1I00000ChpjBQAR",
-        "name": "VisionController",
-        "createdDate": "2017-11-30T00:56:11.000+0000",
         "createdById": "0051I000000JaV8QAK",
-        "namespacePrefix": null,
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedDate": "2018-09-10T17:46:42.000+0000",
-        "fullName": "VisionController",
-        "fileName": "unpackaged/classes/VisionController.cls",
         "createdByName": "Alexander Marvick",
+        "createdDate": "2017-11-30T00:56:11.000Z",
+        "fileName": "unpackaged/classes/VisionController.cls",
+        "fullName": "VisionController",
+        "id": "01p1I00000ChpjBQAR",
+        "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2018-09-10T17:46:42.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4383,20 +4381,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "PostPriceChangeToSlackTest.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-11-18T21:52:42.000Z",
-        "fileName": "unpackaged/classes/PostPriceChangeToSlackTest.cls",
-        "fullName": "PostPriceChangeToSlackTest",
-        "id": "01p1I00000Bm76oQAB",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "OpsHR_WorkerInformationController.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4407,6 +4391,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2018-05-01T16:49:13.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "PostPriceChangeToSlackTest.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-11-18T21:52:42.000Z",
+        "fileName": "unpackaged/classes/PostPriceChangeToSlackTest.cls",
+        "fullName": "PostPriceChangeToSlackTest",
+        "id": "01p1I00000Bm76oQAB",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4467,20 +4465,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "TestVerifyDate.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-12-17T16:59:03.000Z",
-        "fileName": "unpackaged/classes/TestVerifyDate.cls",
-        "fullName": "TestVerifyDate",
-        "id": "01p1I00000EkJltQAF",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-12-17T17:01:45.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "LIFXController.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4491,6 +4475,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2017-11-18T21:52:42.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "TestVerifyDate.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-12-17T16:59:03.000Z",
+        "fileName": "unpackaged/classes/TestVerifyDate.cls",
+        "fullName": "TestVerifyDate",
+        "id": "01p1I00000EkJltQAF",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-12-17T17:01:45.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4677,20 +4675,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "HandlerQuarter.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-11-18T21:52:42.000Z",
-        "fileName": "unpackaged/classes/HandlerQuarter.cls",
-        "fullName": "HandlerQuarter",
-        "id": "01p1I00000Bm76eQAB",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "TestRestrictContactByName.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4701,6 +4685,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2017-12-17T17:07:22.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "HandlerQuarter.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-11-18T21:52:42.000Z",
+        "fileName": "unpackaged/classes/HandlerQuarter.cls",
+        "fullName": "HandlerQuarter",
+        "id": "01p1I00000Bm76eQAB",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"

@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="taskName" type="String" />
+    <aura:attribute name="arrayIndex" type="Integer" />
+    <tr>
+        <td data-label="Task">
+            <div class="slds-truncate">{!v.taskName}</div>
+        </td>
+        <td data-label="Action">
+            <c:MarvickToDoDeleteButton arrayIndex="{!v.arrayIndex}" /> <!-- AM To Do - Update this name -->
+        </td>
+    </tr>
+</aura:component>

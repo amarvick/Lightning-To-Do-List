@@ -1,0 +1,9 @@
+<aura:component>
+    <!-- When you import the component on to the app, you can make the 'message' anything you want. -->
+    <aura:attribute name="message" type="String" default="Default hello"/>
+    <aura:attribute name="buttonName" type="String" default="Default Button"/>
+    
+    <!-- Don't forget 'v.' to get 'value' from the component -->
+    <!-- Don't forget 'c.' for 'controller' -->
+    <lightning:button class="slds-button slds-button_neutral" label="{!v.buttonName}" onclick="{!c.marvify}"/>
+</aura:component>
