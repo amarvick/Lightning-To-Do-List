@@ -16,5 +16,9 @@
     updateTasks : function(component, event, helper) {
         const tasks = component.get('v.tasks');
     	helper.updateTasks(component, tasks);
+	},
+    
+    retrieveTasks: function(component, event, helper) {
+        helper.retrieveTasks(component);
 	}
 })

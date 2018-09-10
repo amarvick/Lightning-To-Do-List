@@ -1,0 +1,199 @@
+<apex:page standardController="Contact" title="Worker Information" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" lightningStyleSheets="true">
+  <apex:includeScript value="/soap/ajax/27.0/connection.js"/>
+  <apex:includeScript value="/support/console/42.0/integration.js"/>
+  <apex:slds />
+  <script type="text/javascript">
+    // Open a case record from the 360 view table
+
+    
+    // Open email publisher with supervisor email
+    function supervisorEmailSubtab() {
+      sforce.console.getEnclosingPrimaryTabId(openSupervisorEmailSubtab);
+    }
+    // Open email publisher with contact email
+    function contactEmailSubtab() {
+      //First find the ID of the primary tab to put the new subtab in
+      sforce.console.getEnclosingPrimaryTabId(openContactEmailSubtab);
+    }
+    // Open visualforce page that displays all Ops HR cases for contact
+    function casesSubtab() {
+      //First find the ID of the primary tab to put the new subtab in
+      sforce.console.getEnclosingPrimaryTabId(openCasesSubtab);
+    }
+    var openCasesSubtab = function openCasesSubtab(result) {
+      //Now that we have the primary tab ID, we can open a new subtab in it
+      var primaryTabId = result.id;
+    
+      // TODO change 'Subtab Title' to the contact name
+      sforce.console.openSubtab(primaryTabId , '/apex/OpsHR_CasesByContact?id={!contact.Id}', true, 
+          'Previous Cases', null, openSuccess, 'salesforceSubtab');
+    };
+    
+    var openSuccess = function openSuccess(result) {
+    debugger;
+      //Report whether we succeeded in opening the subtab
+      if (result.success == true) {
+        // alert('subtab successfully opened');
+      } else {
+        alert('subtab cannot be opened');
+      }
+    };
+  </script>
+  <style>
+    body {
+      overflow: none;
+    }
+    div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      bottom: 0;
+      background-color:#e7edf4;
+    }
+    .ul{
+      padding-right:80px;
+      padding-bottom:20px; 
+      height:70px;
+    }
+    .li{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: 1.5em; 
+      white-space: normal;
+    }
+    .slds-scope h3 {
+      font-family: 'SalesforceSans-Light',Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      color: #16325c;
+      font-weight: normal;
+    }
+    .slds-scope .slds-table td, .slds-scope .slds-table th {
+      padding: inherit;
+      padding-right: 0px;
+    } 
+    .slds-scope .slds-table:not(.slds-no-row-hover) tbody tr:hover>td, .slds-scope .slds-table:not(.slds-no-row-hover) tbody tr:hover>th {
+      background-color: #e3f3ff;
+    }
+    div.slds-truncate.slds-text-color_weak { 
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      table-layout: fixed;
+      text-align: left;
+    }
+    td {
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .minimizeWidthOne {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      right: 20px;
+      z-index: 99999;
+    }
+
+    .minimizeWidthTwo {
+      padding: 0;
+      margin: 0;
+      left: -20px;
+      width: 50px;
+    }
+
+    .minimizeWidthThree {
+      margin: 0;
+      width: 90px;
+      position: relative;
+      left: 8px;
+    }
+
+    @media only screen and (max-width: 300px) {
+      overflow-x: hidden;
+      .minimizeWidthOne {
+        position: relative;
+        width: 125px;
+      }
+
+      .minimizeWidthTwo {
+        position: relative;
+        left: 5px;
+      }
+
+      .minimizeWidthThree {
+        position: relative;
+
+      }
+    }
+
+  </style>
+  <apex:pageMessages />
+  <div class="slds-scope">
+    <div class="slds-form">
+      <div class="slds-grid slds-wrap">
+        <!-- column one -->
+        <div class="slds-col slds-size_1-of-12 slds-gutters">
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Login</strong></span></li>
+          </ul>
+          <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Shift Pattern</strong></span></li>
+          </ul>
+          <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Department</strong></span></li>
+            <li class="li">
+              <apex:outputField value="{!contact.Department}"/>
+            </li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Supervisor</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Personal email</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Home Phone - Private</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Hourly Rate</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Last Hire Day</strong></span></li>
+          </ul>
+        </div>
+        <!-- column two -->
+        <div class="slds-col slds-size_1-of-12 slds-gutters">
+          <ul class="ul">
+            <li><a style="cursor: pointer;" onClick="window.open('https://phonetool.amazon.com/users','_blank');">Phone Tool</a></li>
+          </ul>
+          <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Shift Pattern Description</strong></span></li>
+          </ul>
+          <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Department Description</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Supervisor's email</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Job Title</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Mobile Phone - Private</strong></span></li>
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Shift Differential Description</strong></span></li>
+
+          </ul>
+              <ul class="ul">
+            <li><span class="slds-text-color_weak"><strong>Career Choice Status</strong></span></li>
+          </ul>
+        </div>
+      </div>
+      <img id="theImage" src="https://www.argospetinsurance.co.uk/assets/uploads/2017/12/cat-pet-animal-domestic-104827.jpeg"  width="220" height="55" alt="Description of image here"/>
+    </div>
+  </div>
+</apex:page>
