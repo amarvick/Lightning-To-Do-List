@@ -1,13 +1,18 @@
 <aura:component controller="taskController">
     <aura:attribute name="taskName" type="String" />
+    <!-- <aura:attribute name="taskStatus" type="String" /> -->
     <aura:attribute name="arrayIndex" type="Integer" />
     <tr>
         <td data-label="Task">
             <div class="slds-truncate">{!v.taskName}</div>
         </td>
         <td data-label="Status">
-            <select> <!-- AM - use auraiteration to get the task field values -->
-                <option value="Completed"></option>
+            <select label="Task Status"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select' -->
+                <option value="Not Started">Not Started</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+                <option value="Waiting on someone else">Waiting on someone else</option>
+                <option value="Deferred">Deferred</option>
             </select>
         </td>
         <td data-label="Action">

@@ -1,5 +1,5 @@
 <aura:component controller="taskController">
-    <aura:attribute name="taskList" type="String[]" />
+    <aura:attribute name="taskList" type="Task[]" />
     
     <div class="slds-grid slds-grid_vertical-align-center">
       <div class="slds-col">

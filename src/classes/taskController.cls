@@ -9,7 +9,7 @@ public class taskController {
     @AuraEnabled // getTasks function is now lightning-enabled. This should happen on page initialization
     public static List<String> getTasks() {
         List<String> subjects = new List<String>();
-        List<Task> allTasks = [SELECT Id, Subject FROM Task WHERE OwnerId =: currentUser.Id];
+        List<Task> allTasks = [SELECT Id, Subject FROM Task]; //];
         
         for (Task t : allTasks) {
             subjects.add(t.Subject);
