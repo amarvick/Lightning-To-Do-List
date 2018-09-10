@@ -1,6 +1,0 @@
-<apex:page controller="ExampleClass">
-  <!-- Begin Default Content REMOVE THIS -->
-  <h1>Congratulations</h1>
-  {! theString }
-  <!-- End Default Content REMOVE THIS -->
-</apex:page>

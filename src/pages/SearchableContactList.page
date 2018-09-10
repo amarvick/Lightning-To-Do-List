@@ -1,3 +1,0 @@
-<apex:page controller="SearchController" tabStyle="Account">
-    Yes
-</apex:page>
