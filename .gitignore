@@ -1,3 +1,5 @@
+# Only inlcude aura files with 'ASM'; everything else is irrelevant
+
 /src/aura/*
 !/src/aura/ASM_AllTasks
 !/src/aura/ASM_AllTasksContainer
@@ -8,11 +10,21 @@
 !/src/aura/ASM_ToDoApp
 !/src/aura/ASM_ToDoDeleteTaskEvent
 
+# Do not include components, pages, staticresources, triggers
+
 /src/components
 /src/pages
 /src/staticresources
 /src/triggers
 
+# only include ASM_ScheduledRemoveTasks and taskController
+
 /src/classes/*
 !/src/classes/ASM_ScheduledRemoveTasks.cls
 !/src/classes/taskController.cls
+
+# No debug logs, .vscode or config
+
+/debug/logs
+/.vscode
+/config

@@ -3946,176 +3946,6 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmXCSA0"
-        },
-        "Id": "0Ad1I000001VmXCSA0",
-        "AuraDefinitionBundleId": "0Ab1I000000RM4GSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM4GSAW"
-            },
-            "DeveloperName": "MarvickApplication"
-        },
-        "DefType": "CONTROLLER",
-        "Format": "JS"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmPVSA0"
-        },
-        "Id": "0Ad1I000001VmPVSA0",
-        "AuraDefinitionBundleId": "0Ab1I000000RM4GSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM4GSAW"
-            },
-            "DeveloperName": "MarvickApplication"
-        },
-        "DefType": "APPLICATION",
-        "Format": "XML"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001Vnc5SAC"
-        },
-        "Id": "0Ad1I000001Vnc5SAC",
-        "AuraDefinitionBundleId": "0Ab1I000000RM4GSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM4GSAW"
-            },
-            "DeveloperName": "MarvickApplication"
-        },
-        "DefType": "STYLE",
-        "Format": "CSS"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmPaSAK"
-        },
-        "Id": "0Ad1I000001VmPaSAK",
-        "AuraDefinitionBundleId": "0Ab1I000000RM4QSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM4QSAW"
-            },
-            "DeveloperName": "MarvickApplicationComponent"
-        },
-        "DefType": "COMPONENT",
-        "Format": "XML"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmWxSAK"
-        },
-        "Id": "0Ad1I000001VmWxSAK",
-        "AuraDefinitionBundleId": "0Ab1I000000RM4QSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM4QSAW"
-            },
-            "DeveloperName": "MarvickApplicationComponent"
-        },
-        "DefType": "STYLE",
-        "Format": "CSS"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmPfSAK"
-        },
-        "Id": "0Ad1I000001VmPfSAK",
-        "AuraDefinitionBundleId": "0Ab1I000000RM4QSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM4QSAW"
-            },
-            "DeveloperName": "MarvickApplicationComponent"
-        },
-        "DefType": "CONTROLLER",
-        "Format": "JS"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmXRSA0"
-        },
-        "Id": "0Ad1I000001VmXRSA0",
-        "AuraDefinitionBundleId": "0Ab1I000000RM6OSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM6OSAW"
-            },
-            "DeveloperName": "MarvickAppCompTaskCreate"
-        },
-        "DefType": "COMPONENT",
-        "Format": "XML"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmXgSAK"
-        },
-        "Id": "0Ad1I000001VmXgSAK",
-        "AuraDefinitionBundleId": "0Ab1I000000RM6OSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM6OSAW"
-            },
-            "DeveloperName": "MarvickAppCompTaskCreate"
-        },
-        "DefType": "STYLE",
-        "Format": "CSS"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmXbSAK"
-        },
-        "Id": "0Ad1I000001VmXbSAK",
-        "AuraDefinitionBundleId": "0Ab1I000000RM6OSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM6OSAW"
-            },
-            "DeveloperName": "MarvickAppCompTaskCreate"
-        },
-        "DefType": "DESIGN",
-        "Format": "XML"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmXWSA0"
-        },
-        "Id": "0Ad1I000001VmXWSA0",
-        "AuraDefinitionBundleId": "0Ab1I000000RM6TSAW",
-        "AuraDefinitionBundle": {
-            "attributes": {
-                "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RM6TSAW"
-            },
-            "DeveloperName": "MarvickAppCompTaskView"
-        },
-        "DefType": "COMPONENT",
-        "Format": "XML"
-    },
-    {
-        "attributes": {
-            "type": "AuraDefinition",
             "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VmhgSAC"
         },
         "Id": "0Ad1I000001VmhgSAC",
@@ -4150,6 +3980,23 @@
     {
         "attributes": {
             "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnhtSAC"
+        },
+        "Id": "0Ad1I000001VnhtSAC",
+        "AuraDefinitionBundleId": "0Ab1I000000RMV4SAO",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMV4SAO"
+            },
+            "DeveloperName": "MarvickToDoDeleteButton"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
             "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnbCSAS"
         },
         "Id": "0Ad1I000001VnbCSAS",
@@ -4167,16 +4014,33 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnbHSAS"
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001Vni8SAC"
         },
-        "Id": "0Ad1I000001VnbHSAS",
-        "AuraDefinitionBundleId": "0Ab1I000000RMV9SAO",
+        "Id": "0Ad1I000001Vni8SAC",
+        "AuraDefinitionBundleId": "0Ab1I000000RMY8SAO",
         "AuraDefinitionBundle": {
             "attributes": {
                 "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMV9SAO"
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMY8SAO"
             },
-            "DeveloperName": "MarvickAppCompTaskCreateContainer"
+            "DeveloperName": "ASM_ToDoDeleteTaskEvent"
+        },
+        "DefType": "EVENT",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001Vo0USAS"
+        },
+        "Id": "0Ad1I000001Vo0USAS",
+        "AuraDefinitionBundleId": "0Ab1I000000RMekSAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMekSAG"
+            },
+            "DeveloperName": "HeaderComponent"
         },
         "DefType": "COMPONENT",
         "Format": "XML"
@@ -4184,16 +4048,16 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnbgSAC"
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoLiSAK"
         },
-        "Id": "0Ad1I000001VnbgSAC",
-        "AuraDefinitionBundleId": "0Ab1I000000RMVTSA4",
+        "Id": "0Ad1I000001VoLiSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMm2SAG",
         "AuraDefinitionBundle": {
             "attributes": {
                 "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMVTSA4"
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMm2SAG"
             },
-            "DeveloperName": "MarvickAppCompTasksContainer"
+            "DeveloperName": "ASM_CreateTask"
         },
         "DefType": "COMPONENT",
         "Format": "XML"
@@ -4201,16 +4065,33 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnblSAC"
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoLnSAK"
         },
-        "Id": "0Ad1I000001VnblSAC",
-        "AuraDefinitionBundleId": "0Ab1I000000RMVYSA4",
+        "Id": "0Ad1I000001VoLnSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMm2SAG",
         "AuraDefinitionBundle": {
             "attributes": {
                 "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMVYSA4"
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMm2SAG"
             },
-            "DeveloperName": "MarvickAppCompTasks"
+            "DeveloperName": "ASM_CreateTask"
+        },
+        "DefType": "STYLE",
+        "Format": "CSS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoM2SAK"
+        },
+        "Id": "0Ad1I000001VoM2SAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMm7SAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMm7SAG"
+            },
+            "DeveloperName": "ASM_CreateTaskContainer"
         },
         "DefType": "COMPONENT",
         "Format": "XML"
@@ -4218,16 +4099,50 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnbqSAC"
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoM7SAK"
         },
-        "Id": "0Ad1I000001VnbqSAC",
-        "AuraDefinitionBundleId": "0Ab1I000000RMVdSAO",
+        "Id": "0Ad1I000001VoM7SAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMm7SAG",
         "AuraDefinitionBundle": {
             "attributes": {
                 "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMVdSAO"
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMm7SAG"
             },
-            "DeveloperName": "MarvickAppCreateTaskButton"
+            "DeveloperName": "ASM_CreateTaskContainer"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMCSA0"
+        },
+        "Id": "0Ad1I000001VoMCSA0",
+        "AuraDefinitionBundleId": "0Ab1I000000RMm7SAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMm7SAG"
+            },
+            "DeveloperName": "ASM_CreateTaskContainer"
+        },
+        "DefType": "HELPER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMHSA0"
+        },
+        "Id": "0Ad1I000001VoMHSA0",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmCSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmCSAW"
+            },
+            "DeveloperName": "ASM_AllTasks"
         },
         "DefType": "COMPONENT",
         "Format": "XML"
@@ -4235,16 +4150,16 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VnbvSAC"
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMMSA0"
         },
-        "Id": "0Ad1I000001VnbvSAC",
-        "AuraDefinitionBundleId": "0Ab1I000000RMViSAO",
+        "Id": "0Ad1I000001VoMMSA0",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmHSAW",
         "AuraDefinitionBundle": {
             "attributes": {
                 "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMViSAO"
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmHSAW"
             },
-            "DeveloperName": "MarvickAppCreateTaskInput"
+            "DeveloperName": "ASM_AllTasksContainer"
         },
         "DefType": "COMPONENT",
         "Format": "XML"
@@ -4252,18 +4167,103 @@
     {
         "attributes": {
             "type": "AuraDefinition",
-            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001Vnc0SAC"
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMWSA0"
         },
-        "Id": "0Ad1I000001Vnc0SAC",
-        "AuraDefinitionBundleId": "0Ab1I000000RMVnSAO",
+        "Id": "0Ad1I000001VoMWSA0",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmMSAW",
         "AuraDefinitionBundle": {
             "attributes": {
                 "type": "AuraDefinitionBundle",
-                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMVnSAO"
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmMSAW"
             },
-            "DeveloperName": "MarvickAppHeader"
+            "DeveloperName": "ASM_DisplayComponent"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMgSAK"
+        },
+        "Id": "0Ad1I000001VoMgSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmMSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmMSAW"
+            },
+            "DeveloperName": "ASM_DisplayComponent"
+        },
+        "DefType": "HELPER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMRSA0"
+        },
+        "Id": "0Ad1I000001VoMRSA0",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmMSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmMSAW"
+            },
+            "DeveloperName": "ASM_DisplayComponent"
         },
         "DefType": "COMPONENT",
         "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMlSAK"
+        },
+        "Id": "0Ad1I000001VoMlSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmRSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmRSAW"
+            },
+            "DeveloperName": "ASM_ToDoApp"
+        },
+        "DefType": "APPLICATION",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMqSAK"
+        },
+        "Id": "0Ad1I000001VoMqSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmWSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmWSAW"
+            },
+            "DeveloperName": "ASM_DeleteButton"
+        },
+        "DefType": "COMPONENT",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad1I000001VoMvSAK"
+        },
+        "Id": "0Ad1I000001VoMvSAK",
+        "AuraDefinitionBundleId": "0Ab1I000000RMmWSAW",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab1I000000RMmWSAW"
+            },
+            "DeveloperName": "ASM_DeleteButton"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
     }
 ]

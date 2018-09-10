@@ -6,7 +6,7 @@
 	<c:HeaderComponent />
     
     <c:ASM_CreateTaskContainer taskList="{!v.tasks}"/>
-    <button class="slds-button slds-button_success" onclick="{!c.updateTasks}">Update Task Records</button>
+    <button class="slds-button slds-button_outline-brand" onclick="{!c.updateTasks}">Update Task Records</button>
     <c:ASM_AllTasksContainer allTasks="{!v.tasks}"/>
     
 </aura:component>
