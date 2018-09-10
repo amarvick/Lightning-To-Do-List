@@ -1,3 +1,0 @@
-<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes">
-	<lightning:input name="searchContact" value="Search For Contact" label="Search For Contact" maxlength="300" />
-</aura:component>

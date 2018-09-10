@@ -1,4 +1,0 @@
-<aura:component>
-    <c:campingHeader/>
-    <c:campingList items="{!v.items}"/>
-</aura:component>
