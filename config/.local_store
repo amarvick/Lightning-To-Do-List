@@ -3724,15 +3724,17 @@
         "mmState": "clean"
     },
     "VisionController.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-11-30T00:56:11.000Z",
-        "fileName": "unpackaged/classes/VisionController.cls",
-        "fullName": "VisionController",
         "id": "01p1I00000ChpjBQAR",
+        "name": "VisionController",
+        "createdDate": "2017-11-30T00:56:11.000+0000",
+        "createdById": "0051I000000JaV8QAK",
+        "namespacePrefix": null,
         "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedDate": "2018-09-10T17:46:42.000+0000",
+        "fullName": "VisionController",
+        "fileName": "unpackaged/classes/VisionController.cls",
+        "createdByName": "Alexander Marvick",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-11-30T01:24:48.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
