@@ -8,6 +8,9 @@
                     <div class="slds-truncate" title="Task">Task</div>
                 </th>
                 <th scope="col">
+                    <div class="slds-truncate" title="Status">Status</div>
+                </th>
+                <th scope="col">
                     <div class="slds-truncate" title="Action">Action</div>
                 </th>
             </tr>

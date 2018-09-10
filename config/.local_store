@@ -3906,15 +3906,17 @@
         "mmState": "clean"
     },
     "taskController.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2018-09-05T23:37:30.000Z",
-        "fileName": "unpackaged/classes/taskController.cls",
-        "fullName": "taskController",
         "id": "01p1I00000GAEvZQAX",
+        "name": "taskController",
+        "createdDate": "2018-09-05T23:37:30.000+0000",
+        "createdById": "0051I000000JaV8QAK",
+        "namespacePrefix": null,
         "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedDate": "2018-09-10T19:18:55.000+0000",
+        "fullName": "taskController",
+        "fileName": "unpackaged/classes/taskController.cls",
+        "createdByName": "Alexander Marvick",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-10T16:07:41.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"

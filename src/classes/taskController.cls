@@ -1,10 +1,15 @@
 public class taskController {
+
+    public static User currentUser;
+
+    public taskController() {
+        currentUser = [SELECT Id FROM user where Id =: Userinfo.getUserID()].get(0);
+    }
     
     @AuraEnabled // getTasks function is now lightning-enabled. This should happen on page initialization
     public static List<String> getTasks() {
-        User u = [Select Id FROM user where id = : Userinfo.getUserID()].get(0); // AM - initialize once.
         List<String> subjects = new List<String>();
-        List<Task> allTasks = [SELECT Id, Subject FROM Task];
+        List<Task> allTasks = [SELECT Id, Subject FROM Task WHERE OwnerId =: currentUser.Id];
         
         for (Task t : allTasks) {
             subjects.add(t.Subject);
@@ -15,8 +20,7 @@ public class taskController {
     
     @AuraEnabled // AM - This is for saving tasks. Will need to improve code for deleting/adding
     public static void saveTasks(List<String> theTaskSubjects) {
-        User u = [Select Id FROM user where id = : Userinfo.getUserID()].get(0); // AM - initialize once.
-        
+
         // Tasks to Add
         List<Task> allNewTasks = new List<Task>();
         
@@ -48,9 +52,8 @@ public class taskController {
             
                 Task theNewTask = new Task(
                     Subject = s,
-                    OwnerId = u.Id
+                    OwnerId = currentUser.Id
                 );
-                System.debug('theNewTask: ' + theNewTask);
                 allNewTasks.add(theNewTask);
             }
         }
@@ -58,16 +61,10 @@ public class taskController {
         delete tasksToRemove;
     	insert allNewTasks;
     }
-    
-    @AuraEnabled // AM - May not use this
-    public static void saveTasks(String theTaskSubject) {
-        User u = [Select Id FROM user where id = : Userinfo.getUserID()].get(0); // AM - initialize once.
 
-        Task theNewTask = new Task(
-            Subject = theTaskSubject,
-            OwnerId = u.Id
-        );
-        
-        insert theNewTask;
+    @AuraEnabled // AM to do - get values from Task Status
+    public static List<String> getTaskStatusValues() {
+        List<String> statusValues = new List<String>();
+        return statusValues;
     }
 }
