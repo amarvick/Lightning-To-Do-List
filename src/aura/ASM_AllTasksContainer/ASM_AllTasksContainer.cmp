@@ -17,7 +17,7 @@
         </thead>
         <tbody>
             <aura:iteration items="{!v.allTasks}" var="t" indexVar="index">
-                <c:ASM_AllTasks theTask="{!t}" taskName="{!t.Subject}" taskStatus="{!t.Status}" arrayIndex="{!index + 1}"/>
+                <c:ASM_AllTasks theTask="{!t}" arrayIndex="{!index + 1}"/>
             </aura:iteration>
         </tbody>
     </table>

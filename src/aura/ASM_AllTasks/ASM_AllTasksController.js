@@ -3,7 +3,7 @@
         var arrayIndex = component.get('v.arrayIndex') - 1;
         console.log('arrayIndex: ' + arrayIndex)
         
-		var status = component.get('v.taskStatus');
+		var status = component.get('v.theTask.Status');
         console.log('status: '+ status);        
 
         var selectMenu = document.getElementsByClassName('statusSelectMenu')[arrayIndex];

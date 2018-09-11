@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="This will add a new task">
+    <aura:attribute name="arrayIndex" type="Task" />
+</aura:event>

@@ -6,65 +6,61 @@ public class taskController {
         currentUser = [SELECT Id FROM user where Id =: Userinfo.getUserID()].get(0);
     }
     
-    @AuraEnabled // getTasks function is now lightning-enabled. This should happen on page initialization
+    @AuraEnabled // Makes function lightning enabled
     public static List<Task> getTasks() {
-        List<String> subjects = new List<String>();
         List<Task> allTasks = [SELECT Id, Subject, Status FROM Task];
-        
-        for (Task t : allTasks) {
-            subjects.add(t.Subject);
-        }
-        
         return allTasks;
     }
     
-    @AuraEnabled // AM - This is for saving tasks. Will need to improve code for deleting/adding
-    public static void saveTasks(List<String> theTaskSubjects, List<String> theTaskStatuses) {
-
-        // // Tasks to Add
-        // List<Task> allNewTasks = new List<Task>();
+    @AuraEnabled
+    public static void saveTasks(List<Task> theTasks) {
+        // Tasks to Add
+        List<Task> allNewTasks = new List<Task>();
         
-        // // Tasks to Remove
-        // List<Task> tasksToRemove = new List<Task>();
+        // Tasks to Remove
+        List<Task> tasksToRemove = new List<Task>();
+
+        // Tasks to Update
+        List<Task> tasksToUpdate = new List<Task>();
    
-        // // Current Tasks/Subjects
-        // List<String> allCurrentTaskSubjects = getTasks();
-        // List<Task> allCurrentTasks = [SELECT Id, Subject FROM Task WHERE Subject =: allCurrentTaskSubjects];
+        // Current Tasks
+        List<Task> allCurrentTasks = getTasks();
         
-        // // Map Subjects with Tasks
-        // Map<String, Task> getTaskFromString = new Map<String, Task>();
-        // for (Task t : allCurrentTasks) {
-        //     if(allCurrentTaskSubjects.contains(t.Subject) && !getTaskFromString.containsKey(t.Subject)) {
-        //         getTaskFromString.put(t.Subject, t);
-        //     }
-        // }
-        
-        // // Get Tasks to Remove
-        // for (String cs : allCurrentTaskSubjects) {
-        //     if (!theTaskSubjects.contains(cs)) {
-		// 		tasksToRemove.add(getTaskFromString.get(cs));
-        //     }
-        // }
-        
-        // // Get Tasks to Add
-        // for (String s : theTaskSubjects) {
-        //     if (!allCurrentTaskSubjects.contains(s)) {
-            
-        //         Task theNewTask = new Task(
-        //             Subject = s
-        //             // OwnerId = currentUser.Id
-        //         );
-        //         allNewTasks.add(theNewTask);
-        //     }
-        // }
-        
-        // delete tasksToRemove;
-    	// insert allNewTasks;
-    }
+        // Removing tasks OR updating
+        for (Task act : allCurrentTasks) {
+            // Was the task removed
+            if (!theTasks.contains(act)) {
+                tasksToRemove.add(act);
+                // allNewTasks.add(New Task(Priority = 'Medium', Subject = 'Call', Status = 'Not Started'));
+            } else {
+                // Otherwise check if the task was updated
+                for (Task t : theTasks) {
+                    System.debug('t.Id: ' + t.Id + ', act.Id: ' + act.Id);
+                    System.debug('t.Subject: ' + t.Subject + ', act.Subject: ' + act.Subject);
+                    System.debug('t.Status: ' + t.Status + ', act.Status: ' + act.Status);
+                    if (t.Id == act.Id && (t.Subject != act.Subject || t.Status != act.Status)) {
+                        tasksToUpdate.add(t);
+                    }
+                }
+            }
+        }
 
-    @AuraEnabled // AM to do - get values from Task Status
-    public static List<String> getTaskStatusValues() {
-        List<String> statusValues = new List<String>();
-        return statusValues;
+        // Inserting new tasks
+        for (Task t : theTasks) {
+            if (String.isBlank(String.valueOf(t.Id))) {
+                Task newTask = new Task(
+                    Subject = t.Subject,
+                    Status = t.Status,
+                    Priority = t.Priority
+                );
+                allNewTasks.add(newTask);
+            }
+        }
+        
+        // allNewTasks.add(New Task(Priority = 'Medium', Subject = 'Call', Status = 'Not Started'));
+
+        delete tasksToRemove;
+        update tasksToUpdate;
+    	insert allNewTasks;
     }
 }

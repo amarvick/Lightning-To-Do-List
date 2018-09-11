@@ -1,11 +1,12 @@
 <aura:component controller="taskController">
     <aura:handler name="init" action="{!c.retrieveTasks}" value="{!this}" /> <!-- THIS SHOULD BE THE INITIALIZER; loading all of the tasks -->
     <aura:handler event="c:ASM_ToDoDeleteTaskEvent" action="{!c.handleDeleteTask}" />
+    <!-- <aura:handler event="" action="{!}" /> -->
     <aura:attribute name="tasks" type="Task[]" />
     
 	<c:HeaderComponent />
-    
-    <c:ASM_CreateTaskContainer taskList="{!v.tasks}"/>
+
+    <c:ASM_CreateTaskContainer allTasks="{!v.tasks}"/>
     
     <div id="updateButtonDiv">
         <button class="slds-button slds-button_brand" onclick="{!c.updateTasks}">Update Task Records</button>
