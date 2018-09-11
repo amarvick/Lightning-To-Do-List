@@ -1,5 +1,5 @@
 <aura:component>
-    <aura:attribute name="allTasks" type="String[]"/>
+    <aura:attribute name="allTasks" type="Task[]"/>
     <aura:attribute name="arrayIndex" type="Integer"/>
     <table class="slds-table slds-table_bordered slds-table_cell-buffer">
         <thead>
@@ -17,7 +17,7 @@
         </thead>
         <tbody>
             <aura:iteration items="{!v.allTasks}" var="t" indexVar="index">
-                <c:ASM_AllTasks taskName="{!t}" arrayIndex="{!index + 1}"/>
+                <c:ASM_AllTasks theTask="{!t}" taskName="{!t.Subject}" taskStatus="{!t.Status}" arrayIndex="{!index + 1}"/>
             </aura:iteration>
         </tbody>
     </table>

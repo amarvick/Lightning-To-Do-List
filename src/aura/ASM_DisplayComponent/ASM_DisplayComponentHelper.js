@@ -1,11 +1,12 @@
 ({
-	updateTasks : function(component, allTasks) {
+	updateTasks : function(component, allTaskSubjects) {
         
         // Getting the Apex function, defining the parameters
         var action = component.get("c.saveTasks") 
         action.setParams({
-            theTaskSubjects: allTasks,
-            theTaskStatues: allTasks
+            theTaskSubjects: allTaskSubjects
+            // ,
+            // theTaskStatuses: allTasks
         })
         
                           
