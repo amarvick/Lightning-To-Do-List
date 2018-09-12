@@ -15,6 +15,13 @@
                 <option value="Deferred">Deferred</option>
             </select>
         </td>
+        <td data-label="Priority">
+            <select label="Task Priority" class="prioritySelectMenu"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select'. Also use controller to set default value? -->
+                <option value="Not Started">Low</option>
+                <option value="In Progress">Normal</option>
+                <option value="Completed">High</option>
+            </select>
+        </td>
         <td data-label="Action">
             <c:MarvickToDoDeleteButton arrayIndex="{!v.arrayIndex}" /> <!-- AM To Do - Update this name -->
         </td>

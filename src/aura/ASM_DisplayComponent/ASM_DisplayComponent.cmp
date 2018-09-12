@@ -1,7 +1,7 @@
 <aura:component controller="taskController">
     <aura:handler name="init" action="{!c.retrieveTasks}" value="{!this}" /> <!-- THIS SHOULD BE THE INITIALIZER; loading all of the tasks -->
     <aura:handler event="c:ASM_ToDoDeleteTaskEvent" action="{!c.handleDeleteTask}" />
-    <!-- <aura:handler event="" action="{!}" /> -->
+    <!-- <aura:handler event="c:ASM_ToDoAddTaskEvent" action="{!}" /> -->
     <aura:attribute name="tasks" type="Task[]" />
     
 	<c:HeaderComponent />

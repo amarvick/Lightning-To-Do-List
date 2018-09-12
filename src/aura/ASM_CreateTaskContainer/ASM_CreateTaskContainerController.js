@@ -4,10 +4,12 @@
         
         if (inputValue) {
             // Get all tasks as an array, and add the new one
+            helper.addTasks(component, inputValue);
+
             let tasks = component.get('v.allTasks');
             tasks.push({
                 'sObjectType':'Task',
-                'Subject':'Send Letter',
+                'Subject':inputValue,
                 'Status':'Not Started',
                 'Priority':'Normal'
             })

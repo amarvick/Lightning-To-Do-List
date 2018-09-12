@@ -13,6 +13,11 @@ public class taskController {
     }
     
     @AuraEnabled
+    public static void addTask(Task theTask) {
+        insert theTask;
+    }
+
+    @AuraEnabled
     public static void saveTasks(List<Task> theTasks) {
         // Tasks to Add
         List<Task> allNewTasks = new List<Task>();
@@ -45,17 +50,17 @@ public class taskController {
             }
         }
 
-        // Inserting new tasks
-        for (Task t : theTasks) {
-            if (String.isBlank(String.valueOf(t.Id))) {
-                Task newTask = new Task(
-                    Subject = t.Subject,
-                    Status = t.Status,
-                    Priority = t.Priority
-                );
-                allNewTasks.add(newTask);
-            }
-        }
+        // // Inserting new tasks
+        // for (Task t : theTasks) {
+        //     if (String.isBlank(String.valueOf(t.Id))) {
+        //         Task newTask = new Task(
+        //             Subject = t.Subject,
+        //             Status = t.Status,
+        //             Priority = t.Priority
+        //         );
+        //         allNewTasks.add(newTask);
+        //     }
+        // }
         
         // allNewTasks.add(New Task(Priority = 'Medium', Subject = 'Call', Status = 'Not Started'));
 
