@@ -7,7 +7,7 @@
             <div class="slds-truncate"><a href="{!'/lightning/r/Task/' + v.theTask.Id + '/view'}">{!v.arrayIndex}. {!v.theTask.Subject}</a></div>
         </td>
         <td data-label="Status">
-            <select label="Task Status" class="statusSelectMenu"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select'. Also use controller to set default value? -->
+            <select label="Task Status" class="statusSelectMenu" onchange="{!c.updateStatus}"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select'. Also use controller to set default value? -->
                 <option value="Not Started">Not Started</option>
                 <option value="In Progress">In Progress</option>
                 <option value="Completed">Completed</option>
@@ -16,7 +16,7 @@
             </select>
         </td>
         <td data-label="Priority">
-            <select label="Task Priority" class="prioritySelectMenu"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select'. Also use controller to set default value? -->
+            <select label="Task Priority" class="prioritySelectMenu" onchange="{!c.updatePriority}"> <!-- AM - use aura:iteration to get the task field values and put class='slds-select'. Also use controller to set default value? -->
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
                 <option value="High">High</option>

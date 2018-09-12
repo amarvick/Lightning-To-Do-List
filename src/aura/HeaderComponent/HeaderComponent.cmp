@@ -9,7 +9,8 @@
             <h2 class="slds-text-heading--medium">My Tasks</h2>
         </lightning:layoutItem>
         
-        <lightning:icon style="left: 72%;" class="slds-is-relative" iconName="action:refresh" size="medium" onclick="{!c.refreshPage}" alternativeText="Refresh App"/>
+        <!-- AM - will need to find a way to create a refresh button -->
+        <!-- <a style="left: 72%;" class="slds-is-relative" iconName="action:refresh" size="medium" href="{!'/c/ASM_ToDoApp.app'}" alternativeText="Refresh App">Refresh</a> -->
         
     </lightning:layout>
 </aura:component>
