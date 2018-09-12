@@ -10,7 +10,8 @@
 !/src/aura/ASM_ToDoApp
 !/src/aura/ASM_ToDoDeleteTaskEvent
 !/src/aura/ASM_ToDoAddTaskEvent
-!/src/aura/ASM_ASM_ToDoCompRecPage
+!/src/aura/ASM_ToDoCompRecPage
+!/src/aura/HeaderComponent
 
 # Do not include components, pages, staticresources, triggers
 

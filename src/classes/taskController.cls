@@ -8,7 +8,7 @@ public class taskController {
     
     @AuraEnabled // Makes function lightning enabled
     public static List<Task> getTasks() {
-        List<Task> allTasks = [SELECT Id, Subject, Status FROM Task];
+        List<Task> allTasks = [SELECT Id, Subject, Status, Priority FROM Task];
         return allTasks;
     }
     
@@ -43,7 +43,7 @@ public class taskController {
                     System.debug('t.Id: ' + t.Id + ', act.Id: ' + act.Id);
                     System.debug('t.Subject: ' + t.Subject + ', act.Subject: ' + act.Subject);
                     System.debug('t.Status: ' + t.Status + ', act.Status: ' + act.Status);
-                    if (t.Id == act.Id && (t.Subject != act.Subject || t.Status != act.Status)) {
+                    if (t.Id == act.Id && (t.Subject != act.Subject || t.Status != act.Status || t.Priority != act.Priority)) {
                         tasksToUpdate.add(t);
                     }
                 }
