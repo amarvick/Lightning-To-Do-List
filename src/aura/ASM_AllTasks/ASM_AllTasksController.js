@@ -19,15 +19,31 @@
     
     updateStatus : function(component, event, helper) {
         var arrayIndex = component.get('v.arrayIndex') - 1;
-        var theTaskStatus = component.get('v.theTask.Status');
+        var theTask = component.get('v.theTask');
 
         var statusSelectMenu = document.getElementsByClassName('statusSelectMenu')[arrayIndex];
         var newStatus = statusSelectMenu.options[statusSelectMenu.selectedIndex].value;
         
-        component.set(theTaskStatus, newStatus);
+        component.set(theTask, {
+            'sObjectType': 'Task',
+            'Subject': theTask.Subject,
+            'Status': newStatus,
+            'Priority': theTask.Priority
+        });
     },
 
     updatePriority : function(component, event, helper) {
+        var arrayIndex = component.get('v.arrayIndex') - 1;
+        var theTask = component.get('v.theTask');
+
+        var prioritySelectMenu = document.getElementsByClassName('prioritySelectMenu')[arrayIndex];
+        var newPriority = prioritySelectMenu.options[prioritySelectMenu.selectedIndex].value;
         
+        component.set(theTask, {
+            'sObjectType': 'Task',
+            'Subject': theTask.Subject,
+            'Status': theTask.Status,
+            'Priority': newPriority
+        });
     }
 })

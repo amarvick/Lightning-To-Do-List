@@ -9,6 +9,7 @@
     "workspace": "C:\\Users\\alex.DESKTOP-KG7RN8C\\Documents",
     "subscription": [
         "ApexClass",
-        "AuraDefinitionBundle"
+        "AuraDefinitionBundle",
+        "StaticResource"
     ]
 }
