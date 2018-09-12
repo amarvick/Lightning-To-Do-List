@@ -8,5 +8,8 @@
             <h1 class="slds-text-heading--label">Task List</h1>
             <h2 class="slds-text-heading--medium">My Tasks</h2>
         </lightning:layoutItem>
+        
+        <lightning:icon style="left: 72%;" class="slds-is-relative" iconName="action:refresh" size="medium" onclick="{!c.refreshPage}" alternativeText="Refresh App"/>
+        
     </lightning:layout>
 </aura:component>

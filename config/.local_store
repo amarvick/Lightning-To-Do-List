@@ -1492,7 +1492,7 @@
         "id": "0Ad1I000001VprESAS",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-11T21:29:49.000Z",
+        "lastModifiedDate": "2018-09-12T16:28:23.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -1833,6 +1833,20 @@
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
     },
+    "HeaderComponent/HeaderComponentController.js.undefined": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2018-09-12T17:29:27.000Z",
+        "fileName": "unpackaged/aura/HeaderComponent/HeaderComponentController.js",
+        "fullName": "HeaderComponent/HeaderComponentController.js",
+        "id": "0Ad1I000001VqSpSAK",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2018-09-12T17:29:45.000Z",
+        "manageableState": "unmanaged",
+        "type": "AuraDefinitionBundle",
+        "mmState": "clean"
+    },
     "HeaderComponent/HeaderComponent.cmp.undefined": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -1842,7 +1856,7 @@
         "id": "0Ad1I000001Vo0USAS",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-05T21:24:34.000Z",
+        "lastModifiedDate": "2018-09-12T17:29:48.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -2150,7 +2164,7 @@
         "id": "0Ad1I000001VoMCSA0",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-06T21:00:30.000Z",
+        "lastModifiedDate": "2018-09-11T23:39:25.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -2234,7 +2248,7 @@
         "id": "0Ad1I000001VoM7SAK",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-11T23:08:51.000Z",
+        "lastModifiedDate": "2018-09-11T23:32:28.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -2346,7 +2360,7 @@
         "id": "0Ad1I000001VoMRSA0",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-11T23:06:25.000Z",
+        "lastModifiedDate": "2018-09-11T23:17:14.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -2388,7 +2402,7 @@
         "id": "0Ad1I000001VoMHSA0",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-11T21:28:47.000Z",
+        "lastModifiedDate": "2018-09-12T16:42:32.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -2416,7 +2430,7 @@
         "id": "0Ad1I000001VoMMSA0",
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-11T21:28:37.000Z",
+        "lastModifiedDate": "2018-09-12T16:25:18.000Z",
         "manageableState": "unmanaged",
         "type": "AuraDefinitionBundle",
         "mmState": "clean"
@@ -3990,17 +4004,15 @@
         "mmState": "clean"
     },
     "taskController.cls": {
-        "id": "01p1I00000GAEvZQAX",
-        "name": "taskController",
-        "createdDate": "2018-09-05T23:37:30.000+0000",
         "createdById": "0051I000000JaV8QAK",
-        "namespacePrefix": null,
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedDate": "2018-09-12T16:38:22.000+0000",
-        "fullName": "taskController",
-        "fileName": "unpackaged/classes/taskController.cls",
         "createdByName": "Alexander Marvick",
+        "createdDate": "2018-09-05T23:37:30.000Z",
+        "fileName": "unpackaged/classes/taskController.cls",
+        "fullName": "taskController",
+        "id": "01p1I00000GAEvZQAX",
+        "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2018-09-12T16:38:22.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4229,20 +4241,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "RandomContactFactory.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-12-17T17:10:12.000Z",
-        "fileName": "unpackaged/classes/RandomContactFactory.cls",
-        "fullName": "RandomContactFactory",
-        "id": "01p1I00000EkJm3QAF",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-12-17T17:13:44.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "EinsteinVisionController.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4253,6 +4251,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2017-11-18T21:52:42.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "RandomContactFactory.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-12-17T17:10:12.000Z",
+        "fileName": "unpackaged/classes/RandomContactFactory.cls",
+        "fullName": "RandomContactFactory",
+        "id": "01p1I00000EkJm3QAF",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-12-17T17:13:44.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4285,20 +4297,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "BotMessageButton.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-11-18T21:52:42.000Z",
-        "fileName": "unpackaged/classes/BotMessageButton.cls",
-        "fullName": "BotMessageButton",
-        "id": "01p1I00000Bm76IQAR",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "MultiselectController.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4309,6 +4307,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2018-05-16T23:09:18.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "BotMessageButton.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-11-18T21:52:42.000Z",
+        "fileName": "unpackaged/classes/BotMessageButton.cls",
+        "fullName": "BotMessageButton",
+        "id": "01p1I00000Bm76IQAR",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4467,20 +4479,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "PostPriceChangeToSlackTest.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-11-18T21:52:42.000Z",
-        "fileName": "unpackaged/classes/PostPriceChangeToSlackTest.cls",
-        "fullName": "PostPriceChangeToSlackTest",
-        "id": "01p1I00000Bm76oQAB",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "OpsHR_WorkerInformationController.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4491,6 +4489,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2018-05-01T16:49:13.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "PostPriceChangeToSlackTest.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-11-18T21:52:42.000Z",
+        "fileName": "unpackaged/classes/PostPriceChangeToSlackTest.cls",
+        "fullName": "PostPriceChangeToSlackTest",
+        "id": "01p1I00000Bm76oQAB",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4761,20 +4773,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "HandlerQuarter.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2017-11-18T21:52:42.000Z",
-        "fileName": "unpackaged/classes/HandlerQuarter.cls",
-        "fullName": "HandlerQuarter",
-        "id": "01p1I00000Bm76eQAB",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "TestRestrictContactByName.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4785,6 +4783,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2017-12-17T17:07:22.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "HandlerQuarter.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2017-11-18T21:52:42.000Z",
+        "fileName": "unpackaged/classes/HandlerQuarter.cls",
+        "fullName": "HandlerQuarter",
+        "id": "01p1I00000Bm76eQAB",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2017-11-18T21:52:42.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -4901,20 +4913,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "CampingListController.cls": {
-        "createdById": "0051I000000JaV8QAK",
-        "createdByName": "Alexander Marvick",
-        "createdDate": "2018-08-28T19:54:58.000Z",
-        "fileName": "unpackaged/classes/CampingListController.cls",
-        "fullName": "CampingListController",
-        "id": "01p1I00000GA2QwQAL",
-        "lastModifiedById": "0051I000000JaV8QAK",
-        "lastModifiedByName": "Alexander Marvick",
-        "lastModifiedDate": "2018-09-04T04:19:41.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "HandlerHelpTopic.cls": {
         "createdById": "0051I000000JaV8QAK",
         "createdByName": "Alexander Marvick",
@@ -4925,6 +4923,20 @@
         "lastModifiedById": "0051I000000JaV8QAK",
         "lastModifiedByName": "Alexander Marvick",
         "lastModifiedDate": "2017-11-18T21:52:42.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "CampingListController.cls": {
+        "createdById": "0051I000000JaV8QAK",
+        "createdByName": "Alexander Marvick",
+        "createdDate": "2018-08-28T19:54:58.000Z",
+        "fileName": "unpackaged/classes/CampingListController.cls",
+        "fullName": "CampingListController",
+        "id": "01p1I00000GA2QwQAL",
+        "lastModifiedById": "0051I000000JaV8QAK",
+        "lastModifiedByName": "Alexander Marvick",
+        "lastModifiedDate": "2018-09-04T04:19:41.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"

@@ -15,6 +15,5 @@
         var prioritySelectMenu = document.getElementsByClassName('prioritySelectMenu')[arrayIndex];
 		prioritySelectMenu.value = priority;
 
-        console.log('selectMenu.value: '+ selectMenu.value);
 	}
 })
