@@ -20,9 +20,10 @@
 /src/staticresources
 /src/triggers
 
-# only include ASM_ScheduledRemoveTasks and taskController
+# only include ASM_ScheduledCreateTasks, ASM_ScheduledRemoveTasks and taskController
 
 /src/classes/*
+!/src/classes/ASM_ScheduledCreateTasks.cls
 !/src/classes/ASM_ScheduledRemoveTasks.cls
 !/src/classes/taskController.cls
 

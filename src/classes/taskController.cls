@@ -18,6 +18,18 @@ public class taskController {
     }
 
     @AuraEnabled
+    public List<String> getStatusSelectOptions() {
+        List<String> statusSelectOptions = new List<String>();
+        return statusSelectOptions;
+    }
+
+    @AuraEnabled
+    public List<String> getPrioritySelectOptions() {
+        List<String> picklistSelectOptions = new List<String>();
+        return picklistSelectOptions;
+    }
+
+    @AuraEnabled
     public static void saveTasks(List<Task> theTasks) {
         // Tasks to Add
         List<Task> allNewTasks = new List<Task>();
@@ -27,7 +39,7 @@ public class taskController {
 
         // Tasks to Update
         List<Task> tasksToUpdate = new List<Task>();
-   
+
         // Current Tasks
         List<Task> allCurrentTasks = getTasks();
         
